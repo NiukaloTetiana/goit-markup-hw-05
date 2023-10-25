@@ -601,11 +601,12 @@
         <div class="sudscribe-container">
           <p class="footer-title-text">Subscribe</p>
           <form class="footer-form" name="subscribe-form">
-            <input
-              class="footer-form-input"
-              type="email"
-              placeholder="E-mail"
-            />
+            <label class="footer-lebel">
+              <input
+                class="footer-form-input"
+                type="email"
+                placeholder="E-mail"
+            /></label>
             <button class="subscribe-btn" type="submit">
               Subscribe
               <svg class="footer-form-icon" width="24" height="24">
@@ -641,13 +642,13 @@
                 name="user-name"
                 id="user-name"
               />
-              <svg class="form-icon" width="18" height="18">
+              <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
           </div>
           <div class="form-container">
-            <label class="form-label" for="user-phone">Phone number</label>
+            <label class="form-label" for="user-phone">Phone</label>
             <div class="form-field">
               <input
                 class="form-input"
@@ -690,9 +691,11 @@
               class="visually-hidden"
               type="checkbox"
               name="user_agreement"
+              id="user_agreement"
+              value="true"
               checked
             />
-            <label class="form-agreement">
+            <label class="form-agreement" for="user_agreement">
               <span class="custom-checkbox">
                 <svg class="custom-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector-cleck"></use>
